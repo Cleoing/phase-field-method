@@ -1,4 +1,4 @@
-# finite element method for phase field model
+see phase field model.pdf for the basic concept and equation of phase field model
  
 
 
