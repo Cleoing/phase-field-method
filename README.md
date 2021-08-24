@@ -10,3 +10,5 @@ see Parameters
 
 see Steps.pdf for the steps of simulation process
 
+# Examples
+see Examples for the example data and result for the model
