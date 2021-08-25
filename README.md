@@ -16,3 +16,6 @@ see Examples for the example data and result for the model
 # Testing
 
 # Reference
+1. Abdullah Shah, Ali Haider, Said Karim Shah. Numerical Simulation of Two-Dimensional Dendritic Growth Using Phase-Field Model https://www.scirp.org/journal/wjm/
+
+2.
