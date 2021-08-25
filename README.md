@@ -18,4 +18,5 @@ see Examples for the example data and result for the model
 # Reference
 1. Abdullah Shah, Ali Haider, Said Karim Shah. Numerical Simulation of Two-Dimensional Dendritic Growth Using Phase-Field Model https://www.scirp.org/journal/wjm/
 
-2.
+2.Rahul Sanal Numerical Simulation of Dendritic crystal growth using phase field method and investigating the effects of different physical parameter on the growth of the dendrite
+
