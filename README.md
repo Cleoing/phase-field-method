@@ -6,8 +6,6 @@ see Conditions.pdf for boundary condtion, initial condition and stability condit
 # Calculation of phase field model
 see Numerical method.pdf for discretization process for time and space
 
-see Parameters 
-
 see Steps.pdf for the steps of simulation process
 
 # Examples
