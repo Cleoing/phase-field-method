@@ -14,7 +14,7 @@ Code could be divided into three parts:set up, simulation and plot. In the setup
 parameters.txt could be regarded as a guidance for changing parameters
 
 # Examples
-see Examples for the example data and result for the model
+see timeevolution.png for an example simulation of the model
 
 # Testing
 
