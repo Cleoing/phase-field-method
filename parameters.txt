@@ -1,0 +1,16 @@
+1.Calculation time
+Range from 0 to 0.4, changing calculation time could see the process of crystal growth.
+2.Relaxation time
+Relaxation time is related to the branch and growth of edge, when relaxation time become smaller, the velocity of branch growth become faster.
+Suggest ranging from 0.0001 to 0.0009
+3.Anisotropic modulus
+Anisotropic modulus effect the number of branch, suggest number 4,6,8.
+4.Mean interface width
+When mean interface width become larger, the velocity of branch growth become faster.
+Suggest 0.009,0.01,0.011
+5.Anisotropic strength
+Anisotropic strength controls the shape of branch.
+Suggested ranging from 0.005 to 0.05
+6.Latent heat
+The higher of lantent heat, the more heat spreaded form surface, and the branch become slimmer. 
+Suggest ranging from 0.5 to 4.0
