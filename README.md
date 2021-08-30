@@ -11,7 +11,7 @@ see Steps.pdf for the steps of simulation process
 # Code
 Code could be divided into three parts:set up, simulation and plot. In the setup part, people can change parameters for obtaining different result.
 
-parameters.pdf could be regarded as a guidance for changing parameters
+parameters.txt could be regarded as a guidance for changing parameters
 
 # Examples
 see Examples for the example data and result for the model
