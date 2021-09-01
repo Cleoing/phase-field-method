@@ -1,0 +1,68 @@
+% test for temperature discrete
+% set R=10
+% set phase field parameter equals to zero
+% range temperature from 0.9 to 1.2
+% test if the discrete euqation makes sense
+
+clear;clc;clf;tic
+nx=9;    
+ny=nx;
+dx=0.03;
+xnode=dx:dx:nx;
+r=length(xnode);
+dy=dx;
+ynode=dy:dy:ny;
+s=length(ynode);
+dt=0.0001;
+
+R=10;
+K=2.0;
+
+P=zeros(r,s);
+Pn=zeros(r,s);
+
+T=zeros(r,s);
+Tn=zeros(r,s);
+Te=zeros(r,s);
+
+for n=0.9:0.05:1.2
+    n
+    for i=1:r
+    for j=1:s
+        T(i,j)=0;  % T=Treal/Tm
+        Te(i,j)=n;
+        
+        if (i-r/2)^2+(j-s/2)^2<R^2
+            T(i,j)=1;
+
+            
+        end
+        
+    end
+    end
+end
+
+
+ for i=1:r
+    for j=1:s
+    if i==1 && j==1
+                Tn(i,j)=K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif i==r && j==1
+                Tn(i,j)=K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif i==1 && j==s
+                Tn(i,j)=K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif i==r && j==s
+                Tn(i,j)=K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif i<r && i>1 && j==1
+                Tn(i,j)=dt/(dx)^2*(T(i+1,j)+T(i-1,j)-2*T(i,j))+K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif i<r && i>1 && j==s
+                Tn(i,j)=dt/(dx)^2*(T(i+1,j)+T(i-1,j)-2*T(i,j))+K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif j<r && j>1 && i==1
+                Tn(i,j)=dt/(dy)^2*(T(i,j+1)+T(i,j-1)-2*T(i,j))+K*(Pn(i,j)-P(i,j))+T(i,j);
+            elseif j<r && j>1 && i==r
+                Tn(i,j)=dt/(dy)^2*(T(i,j+1)+T(i,j-1)-2*T(i,j))+K*(Pn(i,j)-P(i,j))+T(i,j);
+           else
+                 Tn(i,j)=dt*(T(i,j+1)+T(i,j-1)+T(i+1,j)+T(i-1,j)+0.5*(T(i+1,j+1)+T(i+1,j-1)+T(i-1,j+1)+T(i-1,j-1))-6*T(i,j))/(dx)^2+K*(Pn(i,j)-P(i,j))+T(i,j);
+    end
+    end
+ end
