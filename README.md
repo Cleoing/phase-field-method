@@ -17,6 +17,7 @@ parameters.txt could be regarded as a guidance for changing parameters
 see timeevolution.png for an example simulation of the model
 
 # Testing
+see test files for testing the function of phase field euqation, temperature equation and anisotropy equation
 
 # Reference
 1. Abdullah Shah, Ali Haider, Said Karim Shah. Numerical Simulation of Two-Dimensional Dendritic Growth Using Phase-Field Model https://www.scirp.org/journal/wjm/
